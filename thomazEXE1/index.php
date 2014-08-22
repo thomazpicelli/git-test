@@ -44,7 +44,7 @@
 	        }
             }
          
-        echo "<br>";
+        echo "<br><br><br><br>";
         ?>
         
         <?php 
@@ -56,14 +56,22 @@
                 </tr>";
                     
             for($i = 1; $i<7; $i = $i + 1){ 
-                echo "
-                    <tr> 
+                if ($i % 2 == 0){
+                    echo "<tr > 
+                            <td><b>id</td>   
+                            <td><b>nome</td> 
+                            <td><b>desc</td> 
+                        </tr>";
+                }            
+                else {    
+                    echo "<tr> 
                         <td>id</td>   
                         <td>nome</td> 
                         <td>desc</td> 
-                    </tr> 
-                "; 
-            } 
+                    </tr>";
+                }
+                    
+                } 
             echo "</table>";
         ?>
     </body>
