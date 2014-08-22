@@ -8,9 +8,9 @@
     <body>
         <?php
          
-            $P1 = 7;
-            $m2 = 8;
-            $m3 = 5.5;
+            $p1 = 7;
+            $m1 = 8;
+            $m2 = 5.5;
             $Proj1 = 4;
             $proj2 = 2;
             $proj3 = 7; 
@@ -18,7 +18,7 @@
             $trabf = 6;
             $proc = 4;
             $pf = 10;
-            $mi = (30*$p1 + 10*$m1 + 10*$m2  + 5*$Proj1 + 5*$Proj2 + 5*$Proj3 +5*$Proj4 + 10*$trabf + 20*$proc)/100;
+            $mi = (30*$p1 + 10*$m1 + 10*$m2  + 5*$Proj1 + 5*$proj2 + 5*$proj3 +5*$proj4 + 10*$trabf + 20*$proc)/100;
             
             if ($mi >=7.5){
 
