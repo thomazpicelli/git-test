@@ -4,6 +4,16 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title></title>
+        
+        <style type="text/css">
+            
+            .estilo1{
+                background-color:grey;
+            }
+            .estilo2{
+		background-color:white;
+            }
+         </style>
     </head>
     <body>
         <?php
@@ -56,20 +66,13 @@
                 </tr>";
                     
             for($i = 1; $i<7; $i = $i + 1){ 
-                if ($i % 2 == 0){
-                    echo "<tr > 
-                            <td><b>id</td>   
-                            <td><b>nome</td> 
-                            <td><b>desc</td> 
-                        </tr>";
-                }            
-                else {    
-                    echo "<tr> 
-                        <td>id</td>   
-                        <td>nome</td> 
-                        <td>desc</td> 
-                    </tr>";
-                }
+                if ($i%2==0) $style = "estilo1";
+                else $style = "estilo2";
+		    echo "<tr>";
+			echo "<td class = $style>id</td>";
+			echo "<td class = $style>nome</td>";
+                        echo "<td class = $style>desc</td>";
+                    echo "</tr>";
                     
                 } 
             echo "</table>";
