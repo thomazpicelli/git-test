@@ -76,6 +76,43 @@
                     
                 } 
             echo "</table>";
+            echo "<br><br><br><br>";
         ?>
+         
+        <?php
+		
+            $numero = 5;
+            $primo=0;
+            for ($i=2; $i < $numero; $i++){
+		if ($numero%$i==0){
+                	$primo++;
+                }
+            }
+            if ($primo==0){
+                echo "O numero é primo";
+            }
+            else{
+                echo "O numero não é primo";
+            }
+            echo "<br><br><br><br>";
+	?>
+        
+ 
+        <?php
+		
+		$num=8;
+		$posterior = 0;
+		$anterior = 1;
+		echo "A série fibonacci será: ";
+		for ($i=0; $i<$num; $i++){
+			$anterior = $anterior + $posterior;
+			$posterior = $anterior - $posterior;
+			echo $anterior.", ";
+		}
+                
+		
+	?>
+        
+    
     </body>
 </html>
