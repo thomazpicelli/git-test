@@ -110,8 +110,47 @@
 			echo $anterior.", ";
 		}
                 
-		
+		echo "<br><br><br><br>";
 	?>
+        
+        <?php
+            
+            $alunos[0][0] = "02K01";
+            $alunos[0][1] = "Tecnologia Web II";
+            $alunos[0][2] = "Segunda";
+            $alunos[0][3] = "Charles";
+            $alunos[1][0] = "02J01";
+            $alunos[1][1] = "Linguagem de Programação I ";
+            $alunos[1][2] = "Terça";
+            $alunos[1][3] = "João";
+            $alunos[2][0] = "02K01";
+            $alunos[2][1] = "Linguagem de Programação I ";
+            $alunos[2][2] = "Quarta";
+            $alunos[2][3] = "Charles";
+            
+            echo "<table width='0' border='1'> 
+                <tr>
+                    <td><b>Turma</td>   
+                    <td><b>Discuplina</td> 
+                    <td><b>Semana</td>
+                    <td><b>Professor</td>
+                </tr>";
+           $totalAlunos = count($alunos);
+           
+           for ($i=0; $i<$totalAlunos; $i++) {     
+               echo "<tr>";
+			echo "<td>".$alunos[$i][0]."</td>";
+			echo "<td>".$alunos[$i][1]."</td>";
+                        echo "<td>".$alunos[$i][2]."</td>";
+                        echo "<td>".$alunos[$i][3]."</td>";
+                    echo "</tr>";
+                    
+                } 
+            echo "</table>";
+            echo "<br><br><br><br>";
+        
+        ?>
+        
         
     
     </body>
