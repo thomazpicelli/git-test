@@ -82,13 +82,19 @@
         <?php
 		
             $numero = 5;
-            $primo=0;
-            for ($i=2; $i < $numero; $i++){
+            $primo=true;
+            
+            if ($numero > 2 && $numero%2==0){
+                $primo= false;
+            }
+            
+            for ($i=3; $i < sqrt($numero)/2; $i = $i + 2){
 		if ($numero%$i==0){
-                	$primo++;
+                	$primo = false;
+                        break;
                 }
             }
-            if ($primo==0){
+            if ($primo == true){
                 echo "O numero é primo";
             }
             else{
